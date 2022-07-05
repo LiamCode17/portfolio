@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <script src="https://kit.fontawesome.com/9245784e3b.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script defer src="script.js"></script>
+    <title>Liam Slabbert | Web Developer</title>
+</head>
+
+<body>
+
+    <div class="home-section" id="home">
+        <div class="max-width">
+            <nav class="nav">
+                <div class="logo"><a href="#home">Liam Slabbert</a></div>
+                <div class="open-close">
+                    <i class="open ri-bar-chart-horizontal-line"></i>
+                    <i class="close ri-close-fill"></i>
+                </div>
+                <ul class="list-items">
+                    <li class="list-item"><a href="#about">About</a></li>
+                    <li class="list-item"><a href="#projects">Projects</a></li>
+                    <li class="list-item"><a href="#contact">Chat now</a></li>
+                </ul>
+            </nav>
+            <div class="home-content">
+                <h1>Hi, I'm Liam <br> A Front End Web Developer <br> based in South Africa.</h1>
+                <div class="contact-now">
+                    <a href="#contact">Chat now</a>
+                    <img class="arrow" src="./images/arrow-top.png" alt="">
+                </div>
+            </div>
+            <div class="socials">
+                <img class="arrow social-arrow" src="./images/arrow-bottom-left.png" alt="">
+                <a href=""><i class="fa fa-github"></i></a>
+                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                <a href=""><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+    <section class="about" id="about">
+        <div class="max-width">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About me</h2>
+                    <p>I am a self taught developer with an ambition to be at the top, my passion runs deep within the
+                        tech realm, I love to learn aswell as taking on new
+                        challenges to improve my skills and service delivery.</p>
+                    <p> I am dedicated and motivated to
+                        bring clients exactly what they want, delivered with top quality standards and value.</p>
+                    <div class="my-skills">
+                        <h2>Skills</h2>
+                        <p>/HTML /CSS /JAVASCRIPT /BOOTSTRAP /WORDPRESS</p>
+                    </div>
+                </div>
+                <div class="image-me"></div>
+            </div>
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <div class="max-width">
+            <div class="projects-header">
+                <h2 class="header-2">Projects</h2>
+                <img class="arrow" src="./images/arrow-bottom-left.png" alt="">
+            </div>
+            <div class="project-slider">
+                <div class="project-box">
+                    <img class="proj-img" src="./images/coverted/proj-1.webp" alt="">
+                </div>
+                <div class="project-box">
+                    <img class="proj-img" src="./images/coverted/proj-2.webp" alt="">
+                </div>
+                <div class="project-box">
+                    <img class="proj-img" src="./images/coverted/proj-3.webp" alt="">
+                </div>
+                <div class="project-box">
+                    <img class="proj-img" src="./images/coverted/proj-4.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="contact-header">Contact me</h2>
+            <div class="contact-content">
+                <form action="POST" data-netlify="true">
+                    <input name="name" id="name" type="text" placeholder="Your Name" required>
+                    <input name="email" id="email" type="email" placeholder="Your Email" required>
+                    <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                    <div class="contact-btn">
+                        <button type="submit">Lets chat</button>
+                        <img class="arrow" src="./images/arrow-top.png" alt="">
+                    </div>
+                </form>
+            </div>
+            <img class="cactus cactus-1" src="./images/coverted/cactus.webp" alt="">
+            <img class="cactus cactus-2" src="./images/coverted/cactus.webp" alt="">
+        </div>
+    </section>
+    <footer>
+        Liam Slabbert &copy; 2022
+    </footer>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $('.project-slider').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        infinite: true,
+                    }
+                },
+                {
+                    breakpoint: 750,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+            ]
+        });
+    </script>
+</body>
+
+</html>
